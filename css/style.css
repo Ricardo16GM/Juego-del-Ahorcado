@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2e2e2;
+
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #f3f5f6;
+
+}
+
+.header-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  max-width: 100%;
+  width: 100px;
+}
+
+.header-container a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #0A3871;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.header-container a:hover {
+  color: black;
+}
+
+
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: 60px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+
+}
+
+/*================ Botones ================ */
+
+
+.btn {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5%;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 25px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.btn:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #0A3871;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.btn:hover {
+  color: #ffffff;
+  border: 1px solid #0A3871;
+}
+
+.btn:hover:before {
+  top: -35%;
+  background-color: #0A3871;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.btn:hover:after {
+  top: -45%;
+  background-color: #0A3871;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+.canvas{
+
+  margin-top: 50px;
+  margin-left: 300px;
+  /* border: solid 1px black; */
+
+}
+
+#inicio-none{
+  display: none;
+}
+
+#canvas{
+  transform: translate(-150px , -800px);
+
+}
